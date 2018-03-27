@@ -1,0 +1,46 @@
+<!-- Demo version: 2017.08.12 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video OneWay Broadcasting using RTCMultiConnection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="/demos/logo.png">
+    <link rel="stylesheet" href="/demos/stylesheet.css">
+    <script src="/demos/menu.js"></script>
+</head>
+
+<body>
+        <h1>
+            SALA
+        </h1>
+        <section class="make-center">
+            <input type="text" id="room-id" value="abcdef" autocorrect=off autocapitalize=off size=20>
+            <button id="open-room">Crear una sala</button>
+            <button id="join-room">Unirse a una sala</button>
+            <button id="open-or-join-room">Auto Open Or Join Room</button>
+
+            <div id="room-urls" style="text-align: center;display: none;background: #F1EDED;margin: 15px -10px;border: 1px solid rgb(189, 189, 189);border-left: 0;border-right: 0;"></div>
+            <div id="videos-container"></div>
+        </section>
+        <script src="/dist/RTCMultiConnection.min.js"></script>
+        <script src="/dev/adapter.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+    
+
+        <!-- custom layout for HTML5 audio/video elements -->
+        <link rel="stylesheet" href="/dev/getHTMLMediaElement.css">
+        <script src="/dev/getHTMLMediaElement.js"></script>
+        <script src="main.js"></script>
+        <footer>
+            <small id="send-message"></small>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.webrtc-experiment.com/common.js"></script>
+        <script src="app.js"></script>
+    
+</body>
+
+</html>
