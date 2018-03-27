@@ -208,11 +208,11 @@ function getHTMLMediaElement(mediaElement, config) {
 
             var isFullScreeMode = document.webkitIsFullScreen || document.mozFullScreen || document.fullscreen;
 
-            mediaElementContainer.style.width = (isFullScreeMode ? (window.innerWidth - 200) : config.width) + 'px';
+            mediaElementContainer.style.width = (isFullScreeMode ? (window.innerWidth) : config.width) + 'px';
             mediaElementContainer.style.display = isFullScreeMode ? 'block' : 'inline-block';
 
             if (config.height) {
-                mediaBox.style.height = (isFullScreeMode ? (window.innerHeight - 200) : config.height) + 'px';
+                mediaBox.style.height = (isFullScreeMode ? (window.innerHeight) : config.height) + 'px';
             }
 
             if (!isFullScreeMode && config.onZoomout) config.onZoomout();
